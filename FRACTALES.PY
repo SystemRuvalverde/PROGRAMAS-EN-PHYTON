@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+ 
 from math import sin, cos, pi
 import matplotlib.pyplot as plt
 import matplotlib
@@ -11,8 +14,6 @@ def kochSnowFlake(l, n):
      
     x_vertex3 = l * cos (pi/3)
     y_vertex3 = l * sin(pi/3)
-    
-    
      
     kochCurve(x_vertex1, y_vertex1, x_vertex2, y_vertex2, n)
     kochCurve(x_vertex2, y_vertex2, x_vertex3, y_vertex3, n)

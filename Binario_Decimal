@@ -1,0 +1,13 @@
+import math
+binario=0
+pos=0 #Para ir recorriendo los digitos del número
+decimal=0
+dig=0 #Para ir guardando los digitos del número
+print ("Dime un número en binario de menos de 8 digitos")
+binario = int(input())
+while binario>0:
+    dig=binario%10 #Saco el digito
+    decimal=decimal+dig*(2**(pos)) #Opero
+    pos = pos+1
+    binario=math.trunc(binario/10)
+print (decimal)
